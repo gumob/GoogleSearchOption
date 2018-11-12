@@ -1,11 +1,12 @@
-# <img src="src/images/logo.png" width="48" height="48" style="margin-right: 6px;"> Search Option
+# Search Option
+
 Chrome Extension for customizing Google Search option.
 
-<img src="src/images/capture.png">
+<img src="src/images/capture.png" width="640">
 
 # Overview
 
-This extension adds date range options to Google search.<br/>Each item can be easily switched, and it also supports dark mode.
+This extension adds date range options to Google Search.<br/>Each item can be easily switched, and it also supports dark mode.
 
 # Installation
 
