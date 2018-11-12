@@ -5,7 +5,7 @@ Chrome Extension for customizing Google Search option.
 
 # Overview
 
-This extension adds date range options to Google search. Each item can be easily switched, and it also supports dark mode.
+This extension adds date range options to Google search.<br/>Each item can be easily switched, and it also supports dark mode.
 
 # Installation
 
