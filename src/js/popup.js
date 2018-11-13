@@ -6,13 +6,11 @@ $(document).ready(function() {
         switch (key) {
 
             case "dark_theme":
-            console.log("configurationDidChange", "key", key, "value", value);
             $(".container, header, artcile, .switch").toggleClass("animated", animated);
             $(".container, header, artcile, h1, h2").toggleClass("dark", value);
             $(".switch").toggleClass("switch-dark", value);
 
             case "monochrome_icon":
-            console.log("configurationDidChange", "key", key, "value", value);
             setupIcon();
             break;
 
@@ -22,7 +20,6 @@ $(document).ready(function() {
     }
 
     loadConfiguration(function(dataSource, dataSourceMap) {
-        console.log("loadConfiguration");
         console.dir(dataSource);
         console.dir(dataSourceMap);
         /* Apply css for chrome */

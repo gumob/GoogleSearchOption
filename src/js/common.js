@@ -68,7 +68,6 @@ function getOptionForOverYear(yearDiff) {
 ****************************************/
 
 function loadConfiguration(callback) {
-    console.log("loadConfiguration");
     loadLocalization(0, function() {
         console.dir(localeData);
         initDataSource(callback);
@@ -76,7 +75,6 @@ function loadConfiguration(callback) {
 }
 
 function loadLocalization(localeIndex, localeCallback) {
-    console.log("loadLocalization");
     var loc = locales[localeIndex];
     var jsonUrl = chrome.extension.getURL("_locales/" + loc + "/messages.json");
     var xhr = new XMLHttpRequest();
@@ -91,9 +89,6 @@ function loadLocalization(localeIndex, localeCallback) {
 }
 
 function loadLocalizationComplete(localeIndex, locale, data, localeCallback) {
-    console.log("loadLocalizationComplete");
-    console.log(locale);
-    console.dir(data);
     localeData[locale] = {};
     for (var key in data) {
         localeData[locale][key] = data[key]["message"];
@@ -106,7 +101,6 @@ function loadLocalizationComplete(localeIndex, locale, data, localeCallback) {
 }
 
 function initDataSource(callback) {
-    console.log("initDataSource");
     var storageKeys = [];
     for (var i in dataSource) {
         var model = dataSource[i];
@@ -146,7 +140,6 @@ function initDataSource(callback) {
 ****************************************/
 
 function setConfiguration(key, value, callback) {
-    console.log("setConfiguration");
     var keyValuePair = {};
     keyValuePair[key] = value;
     chrome.storage.local.set(keyValuePair, function () {
@@ -155,7 +148,6 @@ function setConfiguration(key, value, callback) {
 }
 
 function getConfiguration(keys, configCallback) {
-    console.log("getConfiguration");
     chrome.storage.local.get(keys, configCallback);
 }
 
@@ -164,10 +156,8 @@ function getConfiguration(keys, configCallback) {
 ****************************************/
 
 function setupIcon() {
-    console.log("setupIcon");
 
     getConfiguration(["monochrome_icon", "dark_theme"], function (value) {
-        console.log("value", value);
         var isMonoIcon = value.monochrome_icon;
         var isDarkTheme = value.dark_theme;
         var iconPath = "images/icon-color-128.png";
@@ -178,7 +168,6 @@ function setupIcon() {
                 var iconPath = "images/icon-light-128.png";
             }
         }
-        console.log("iconPath", iconPath);
         var data = {
             "path": iconPath
         };

@@ -4,7 +4,6 @@ $(document).ready(function() {
     var dataSourceMap;
 
     function setupOption() {
-        console.log("setupOption");
         var showBorder = dataSource[dataSourceMap["show_border"]].enabled;
         console.dir(dataSource);
         var locale = getPageLocale();;
@@ -40,13 +39,11 @@ $(document).ready(function() {
     }
 
     function toggleOption(isEnabled, label, query, nodeClass, nodeId, baseId) {
-        console.log("toggleOption", typeof(isEnabled), isEnabled, label, query, nodeClass, nodeId, baseId);
         var $optionNode = $("#" + nodeId);
         if ($optionNode.length == 0) {
             var $optionNode = createOptionNode(query, nodeId, label);
             var $baseNode = $("#" + baseId);
             $optionNode.insertBefore($baseNode);
-            console.log("$baseNode", $baseNode);
         }
         $optionNode.addClass(nodeClass);
         if (isEnabled) {
@@ -54,8 +51,6 @@ $(document).ready(function() {
         } else {
             $optionNode.hide();
         }
-        console.log("$optionNode", $optionNode);
-        console.log(" ");
     }
 
     function createOptionNode(query, nodeId, label) {
@@ -87,7 +82,6 @@ $(document).ready(function() {
     }
 
     function toggleBorder(nodeClass, nodeId, showBorder) {
-        console.log("toggleBorder", nodeClass, nodeId, typeof(showBorder), showBorder);
         var $borderNode = $("#" + nodeId);
         if ($borderNode.length == 0) {
             var $baseNode = $("li." + nodeClass).first();
@@ -116,7 +110,6 @@ $(document).ready(function() {
             return;
         }
         $(document).on("click mousedown",　".hdtb-mn-hd", function() {
-            console.log("click");
             loadConfiguration(function(ds, dsm) {
                 dataSource = ds;
                 dataSourceMap = dsm;
