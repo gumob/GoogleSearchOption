@@ -1,4 +1,4 @@
-# Search Option
+# Search Option for Google™
 
 Chrome Extension for customizing Google Search option.
 

@@ -1,5 +1,6 @@
 {
-    "ext_name": {"message": "Search Option"},
+    "ext_name": {"message": "Search Option for Google™"},
+    "ext_short_name": {"message": "Search Option"},
     "ext_desc": {"message": "Google検索オプションをカスタマイズするエクステンション"},
     "past_hour_1": {"message": "1 時間以内"},
     "past_hour_6": {"message": "6 時間以内"},
