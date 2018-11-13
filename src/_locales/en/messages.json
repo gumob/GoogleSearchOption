@@ -1,5 +1,6 @@
 {
-    "ext_name": {"message": "Search Option"},
+    "ext_name": {"message": "Search Option for Google™"},
+    "ext_short_name": {"message": "Search Option"},
     "ext_desc": {"message": "Extension for customizing Google Search options."},
     "past_hour_1": {"message": "Past hour"},
     "past_hour_6": {"message": "Past 6 hours"},
