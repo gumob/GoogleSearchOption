@@ -87,7 +87,7 @@ $(document).ready(function() {
         /* Apply css for chrome */
         var browser = getBrowser();
         if (browser === "chrome") {
-            $(".container").addClass("chrome");
+            $(".container, header").addClass("chrome");
         }
         /* Apply stored value */
         for (var i in dataSource) {

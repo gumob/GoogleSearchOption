@@ -69,7 +69,6 @@ function getOptionForOverYear(yearDiff) {
 
 function loadConfiguration(callback) {
     loadLocalization(0, function() {
-        console.dir(localeData);
         initDataSource(callback);
     });
 }
@@ -109,7 +108,6 @@ function initDataSource(callback) {
         }
     }
     getConfiguration(storageKeys, function(storageData) {
-        console.dir(storageData);
 
         for (var i in dataSource) {
             var model = dataSource[i];
@@ -144,7 +142,7 @@ function setConfiguration(key, value, configCallback) {
     keyValuePair[key] = value;
     chrome.storage.local.set(keyValuePair, function () {
         if (configCallback) {
-            configCallback(key, value);    
+            configCallback(key, value);
         }
     });
 }

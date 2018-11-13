@@ -85,8 +85,13 @@ header {
     width: calc(var(--content-width) - var(--scrollbar-size) - 4px);
     position: fixed;
     top: 0px;
-    left: 2px;
+    left: 0px;
     z-index: 777;
+}
+
+header.chrome {
+    top: 0px;
+    left: 2px;
 }
 
 h1 {
@@ -100,7 +105,7 @@ h1 > #logo {
     width: 32px;
     height: 32px;
     display:inline;
-    margin: 0px 12px 0px 0px;
+    margin: 0px 8px 0px -2px;
 }
 h1 svg {
     width: 32px !important;

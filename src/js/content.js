@@ -5,7 +5,6 @@ $(document).ready(function() {
 
     function setupOption() {
         var showBorder = dataSource[dataSourceMap["show_border"]].enabled;
-        console.dir(dataSource);
         var locale = getPageLocale();;
         for (var i in dataSource) {
             var model = dataSource[i];
