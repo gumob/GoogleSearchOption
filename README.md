@@ -11,7 +11,7 @@ Since each item can be easily switched from the pop-up menu, it can be customize
 
 # Installation
 
-Install via [Chrome Web Store](https://chrome.google.com/webstore/detail/1password-extension-deskt/xxxxxxxxxxxxxxxxxxxxxxxx). Otherwise, you can [install manually from source](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension).
+Install via [Chrome Web Store](https://chrome.google.com/webstore/detail/search-option-for-google/jjijjnhfnfkejenjbpcdgiilmhjnbbal). Otherwise, you can [install manually from source](https://github.com/web-scrobbler/web-scrobbler/wiki/Install-an-unpacked-extension).
 
 # Copyright
 
