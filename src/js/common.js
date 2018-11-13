@@ -139,11 +139,13 @@ function initDataSource(callback) {
 * Configuration
 ****************************************/
 
-function setConfiguration(key, value, callback) {
+function setConfiguration(key, value, configCallback) {
     var keyValuePair = {};
     keyValuePair[key] = value;
     chrome.storage.local.set(keyValuePair, function () {
-        callback(key, value);
+        if (configCallback) {
+            configCallback(key, value);    
+        }
     });
 }
 
