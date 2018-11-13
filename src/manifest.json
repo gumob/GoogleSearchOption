@@ -5,7 +5,7 @@
     "manifest_version": 2,
     "author": "Gumob",
     "default_locale": "en",
-    "homepage_url": "https://github.com/gumob/add-search-options",
+    "homepage_url": "https://github.com/gumob/GoogleSearchOption",
     "icons": {
         "128": "images/icon-color-128.png",
         "48": "images/icon-color-48.png",
