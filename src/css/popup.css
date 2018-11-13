@@ -80,12 +80,12 @@ body {
 /**** Header ****/
 
 header {
+    background-color: var(--bg-color-light);
     height: calc(32px + 32px);
     width: calc(var(--content-width) - var(--scrollbar-size) - 4px);
     position: fixed;
-    background-color: var(--bg-color-light);
-    margin: 0px;
-    padding: 0px;
+    top: 0px;
+    left: 2px;
     z-index: 777;
 }
 
@@ -96,16 +96,21 @@ h1 {
     margin: 12px 12px;
 }
 
-h1 > img {
+h1 > #logo {
     width: 32px;
     height: 32px;
     display:inline;
     margin: 0px 12px 0px 0px;
 }
+h1 svg {
+    width: 32px !important;
+    height: 32px !important;
+}
 
-h1 > p {
+h1 > #title {
     display:inline;
 }
+
 
 /**** Article ****/
 
@@ -113,8 +118,6 @@ article {
     width: var(--content-width);
     padding: 64px 12px 12px 12px;
     margin: 0px;
-    /* overflow-x: hidden;
-    overflow-y: scroll; */
 }
 
 article h2 {
