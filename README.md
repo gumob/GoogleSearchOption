@@ -15,4 +15,4 @@ Install via [Chrome Web Store](https://chrome.google.com/webstore/detail/search-
 
 # Copyright
 
-Search Option is released under MIT license, which means you can modify it, redistribute it or use it however you like.
+Search Option for Google™ is released under MIT license, which means you can modify it, redistribute it or use it however you like.
