@@ -1,3 +1,5 @@
 .cdr_sep.cdr_sep_dotted {
-    border-top-style: dashed !important;
+  border-top-style: dashed !important;
+  border-top-width: 1px !important;
+  border-top-color: rgba(127, 127, 127, 0.2);
 }
