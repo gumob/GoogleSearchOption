@@ -4,10 +4,13 @@ $(document).ready(function() {
     var dataSourceMap;
 
     function setupOption() {
+        console.log("--- setupOption");
         var showBorder = dataSource[dataSourceMap["show_border"]].enabled;
         var locale = getPageLocale();;
+        console.log("locale", locale);
         for (var i in dataSource) {
             var model = dataSource[i];
+            console.log("model", model);
             switch (model.type) {
 
                 case "qdr":
@@ -38,10 +41,17 @@ $(document).ready(function() {
     }
 
     function toggleOption(isEnabled, label, query, nodeClass, nodeId, baseId) {
+        console.log("--- toggleOption");
         var $optionNode = $("#" + nodeId);
+        console.log("nodeId", nodeId);
+        console.log("baseId", baseId);
+        console.log("$optionNode", $optionNode);
+        console.log("$optionNode.length", $optionNode.length);
         if ($optionNode.length == 0) {
             var $optionNode = createOptionNode(query, nodeId, label);
             var $baseNode = $("#" + baseId);
+            console.log("$optionNode", $optionNode);
+            console.log("$baseNode", $baseNode);
             $optionNode.insertBefore($baseNode);
         }
         $optionNode.addClass(nodeClass);
@@ -53,6 +63,7 @@ $(document).ready(function() {
     }
 
     function createOptionNode(query, nodeId, label) {
+        console.log("--- createOptionNode");
         /* Find and clone node */
         var $aNode;
         $aNode = $('#qdr_m > a').clone();
@@ -82,6 +93,7 @@ $(document).ready(function() {
 
     function toggleBorder(nodeClass, nodeId, showBorder) {
         var $borderNode = $("#" + nodeId);
+        console.log("--- toggleBorder");
         if ($borderNode.length == 0) {
             var $baseNode = $("li." + nodeClass).first();
             $borderNode = $("<div>", {
